@@ -45,7 +45,7 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
   * Example - base64 and URL encoded parameter: 
     * encoded value:					``variable1=UGFyYW1ldGVyMT0xMjM0JlBhcmFtZXRlcjI9QUJDRA==``
     * decoded value:					``variable1=Parameter1=1234&Parameter2=ABCD``
-    * valid value to use in the intruder tab:	``variable1=Parameter1=§1234§\[AND\]Parameter2=§ABCD§``
+    * valid value to use in the intruder tab:	``variable1=Parameter1=§1234§[AND]Parameter2=§ABCD§``
 
 5. start the Intruder attack
 6. the parameter values will be automatically ancoded according to the selected transformation functions
