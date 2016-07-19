@@ -32,9 +32,10 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
 
 
 # Set up guide - Intruder integration
-1. send the Request to the Intruder tab
-2. replace the encoded parameter value with the decoded value 
-3. define the Intruder insertion points with placeholder
+1. enable the Intruder integration in the Deserializer tab
+2. send the Request to the Intruder tab
+3. replace the encoded parameter value with the decoded value 
+4. define the Intruder insertion points with placeholder
 
   * Example - ASCII2HEX encoded parameter: 
     * encoded value:					``variable2=757365723d41646d696e7c70617373776f72643d736563726574``
@@ -46,14 +47,15 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
     * decoded value:					``variable1=Parameter1=1234&Parameter2=ABCD``
     * valid value to use in the intruder tab:	``variable1=Parameter1=§1234§\[AND\]Parameter2=§ABCD§``
 
-4. start the Intruder attack
-5. the parameter values will be automatically ancoded according to the selected transformation functions
-6. TIP: In the Intruder attack result/history You will find de decoded version of the payload. Use an external Extension (e.g. Logger++) if You want to check the actual HTTP Request after being transformed by the extension 
+5. start the Intruder attack
+6. the parameter values will be automatically ancoded according to the selected transformation functions
+7. TIP: In the Intruder attack result/history You will find de decoded version of the payload. Use an external Extension (e.g. Logger++) if You want to check the actual HTTP Request after being transformed by the extension 
 
 # Set up guide - Scanner integration
-1. send the Request to the Intruder tab
-2. replace the encoded parameter value with the decoded value (check Intruder integration instruction for examples) 
-3. set the insertion points with the placeholders
-4. right click -> Actively scan defined insertion point 
-5. while scanning, the parameter values will be automatically ancoded according to the selected transformation functions
-6. TIP: In the Scanner finding issues HTTP Requests You will find de decoded version of the payload used. Use an external Extension (e.g. Logger++) if You want to check the actual HTTP Request after being transformed by the extension 
+1. enable the Intruder integration in the Deserializer tab
+2. send the Request to the Intruder tab
+3. replace the encoded parameter value with the decoded value (check Intruder integration instruction for examples) 
+4. set the insertion points with the placeholders
+5. right click -> Actively scan defined insertion point 
+6. while scanning, the parameter values will be automatically ancoded according to the selected transformation functions
+7. TIP: In the Scanner finding issues HTTP Requests You will find de decoded version of the payload used. Use an external Extension (e.g. Logger++) if You want to check the actual HTTP Request after being transformed by the extension 
