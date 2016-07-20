@@ -62,3 +62,6 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
 5. right click -> Actively scan defined insertion point 
 6. while scanning, the parameter values will be automatically ancoded according to the selected transformation functions
 7. TIP: In the Scanner finding issues HTTP Requests You will find de decoded version of the payload used. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension 
+
+# Extension demo How-To
+[Using the extension demo](https://youtu.be/jdUOLoqCFL8)
