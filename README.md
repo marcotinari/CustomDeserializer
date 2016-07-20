@@ -24,11 +24,11 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
 
 # Set up guide - editor tab
 1. Click on the Deserializer tab
-2. Enter the name of the parameter You whant to deal with
+2. Enter the name of the parameter You want to deal with
 3. Set the parameter position: POST for body, GET for URL and COOKIE for Cookie header
 4. Select the transformation function to be applied. 
   * When selected, the functions will be applied as follows
-  * Deserialized data -> ASCII2HEX() -> Base64decode() -> URLdecode() -> serialized data
+  * deserialized data -> ASCII2HEX() -> Base64decode() -> URLdecode() -> serialized data
   * Serialized data -> URLdecode() -> Base64decode() ->  ASCII2HEX() -> deserialized data
 5. Click on the *small* Apply button
 
