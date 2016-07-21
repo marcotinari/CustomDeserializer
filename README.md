@@ -3,7 +3,7 @@ What to do when Burp does not handle custom serialization implemented by specifi
 
 You might have found Yourself manually decoding->editing->encoding the payloads in the intruder and repeater tabs, haven't you?
 
-This extension helps us with this time consuming task.... and eventually automate most of it.
+This extension helps us with this time consuming task.... and eventually automates most of it.
 
 
 # Custom deserializer
@@ -51,8 +51,8 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
     * valid value to use in the intruder tab: ``variable1=Parameter1=§1234§[AND]Parameter2=§ABCD§``
 
 5. start the Intruder attack
-6. the parameter values will be automatically ancoded according to the selected transformation functions
-7. TIP: In the Intruder attack result/history You will find de decoded version of the payload. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension 
+6. the parameter values will be automatically encoded according to the selected transformation functions
+7. TIP: In the Intruder attack result/history You will find the decoded version of the payload. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension 
 
 # Set up guide - Scanner integration
 1. enable the Intruder integration in the Deserializer tab
@@ -61,7 +61,7 @@ The extension is partially based on the Sample Burp Suite extension: custom edit
 4. set the insertion points with the placeholders
 5. right click -> Actively scan defined insertion point 
 6. while scanning, the parameter values will be automatically ancoded according to the selected transformation functions
-7. TIP: In the Scanner finding issues HTTP Requests You will find de decoded version of the payload used. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension 
+7. TIP: In the Scanner finding issues HTTP Requests You will find the decoded version of the payload used. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension 
 
 # Extension demo How-To
 [Using the extension demo](https://youtu.be/jdUOLoqCFL8)
