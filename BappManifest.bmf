@@ -1,0 +1,10 @@
+Uuid: 84ff4dceaae14e84990c6f3f7fe999bd
+ExtensionType: 2
+Name: CustomDeserializer
+ScreenVersion: 1.0
+SerialVersion: 0
+MinPlatformVersion: 0
+ProOnly: False
+Author: Marco Tinari
+ShortDescription: Speed up manual testing of web applications by applying custom deserialization
+EntryPoint: CustomDeserializer_1.0.py
