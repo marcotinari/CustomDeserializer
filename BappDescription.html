@@ -1,1 +1,50 @@
-<p>This extension speeds up manual testing of web applications by performing custom deserialization.</p>
+<p>This extension speeds up manual testing of web applications by performing custom deserialization. Adds a custom editor tab for decoding/encoding parameters on the fly and integrates with Burp Suite Scanner and Intruder for automation.</p>
+
+<p><strong>Full description, set up guide, examples and demo: <a target="_blank" href="https://github.com/marcotinari/CustomDeserializer">https://github.com/marcotinari/CustomDeserializer</a></strong></p>
+
+<p><strong>Quick Set up guide - editor tab</strong></p>
+
+<ol>
+<li>Click on the Deserializer tab</li>
+<li>Enter the name of the parameter You want to deal with</li>
+<li>Set the parameter position: POST for body, GET for URL and COOKIE for Cookie header</li>
+<li>Select the transformation function to be applied. 
+
+<ul>
+<li>When selected, the functions will be applied as follows</li>
+<li>deserialized data -&gt; ASCII2HEX() -&gt; Base64decode() -&gt; URLdecode() -&gt; serialized data</li>
+<li>Serialized data -&gt; URLdecode() -&gt; Base64decode() -&gt;  ASCII2HEX() -&gt; deserialized data</li>
+</ul></li>
+<li>Click on the <em>small</em> Apply button</li>
+</ol>
+
+<p><a target="_blank" href="https://raw.githubusercontent.com/marcotinari/CustomDeserializer/master/CustomDeserializer-full-screen.png">Click here for a screenshot of the Deserializer tab</a></p>
+
+<p><strong>Quick set up guide - Intruder integration</strong></p>
+
+<ol>
+<li>enable the Intruder integration in the Deserializer tab</li>
+<li>send the Request to the Intruder tab</li>
+<li>replace the encoded parameter value with the decoded value </li>
+<li>define the Intruder insertion points with placeholder</li>
+<li>start the Intruder attack</li>
+<li>the parameter values will be automatically encoded according to the selected transformation functions</li>
+<li>TIP: In the Intruder attack result/history You will find the decoded version of the payload. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension </li>
+</ol>
+
+<p><strong>Quick Set up guide - Scanner integration</strong></p>
+
+<ol>
+<li>enable the Intruder integration in the Deserializer tab</li>
+<li>send the Request to the Intruder tab</li>
+<li>replace the encoded parameter value with the decoded value (check Intruder integration instruction for examples) </li>
+<li>set the insertion points with the placeholders</li>
+<li>right click -&gt; Actively scan defined insertion point </li>
+<li>while scanning, the parameter values will be automatically ancoded according to the selected transformation functions</li>
+<li>TIP: In the Scanner finding issues HTTP Requests You will find the decoded version of the payload used. Use an external Extension (e.g. Logger++ is a great extension from Soroush Dalili, NCC Group) if You want to check the actual HTTP Request after being transformed by the extension </li>
+</ol>
+
+<p><strong>Extension demo How-To</strong></p>
+
+<p><a href="https://youtu.be/jdUOLoqCFL8">Using the extension demo</a></p>
+

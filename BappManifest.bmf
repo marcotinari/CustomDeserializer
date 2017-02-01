@@ -1,10 +1,10 @@
 Uuid: 84ff4dceaae14e84990c6f3f7fe999bd
 ExtensionType: 2
 Name: CustomDeserializer
-ScreenVersion: 1.0
-SerialVersion: 1
+ScreenVersion: 1.1
+SerialVersion: 2
 MinPlatformVersion: 0
 ProOnly: False
 Author: Marco Tinari
 ShortDescription: Speeds up manual testing of web applications by performing custom deserialization.
-EntryPoint: CustomDeserializer_1.0.py
+EntryPoint: CustomDeserializer.py
