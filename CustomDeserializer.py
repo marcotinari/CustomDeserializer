@@ -49,7 +49,7 @@ import string
 import re
 from datetime import datetime
 
-__VERSION__ = 1.0
+__VERSION__ = 1.1
 EXTENSION_NAME = 'Custom Deserializer '+str(__VERSION__)
 #~ DEBUG = True
 DEBUG = False

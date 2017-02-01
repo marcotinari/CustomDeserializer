@@ -12,6 +12,7 @@ Custom Deserializer is an extension for [Burp Suite](https://portswigger.net/bur
 It is designed to help security testers by speeding up manual testing of (web)application and extend the Burp Scanner and Burp Intruder automated test capabilities.
 The extension is partially based on the Sample Burp Suite extension: custom editor tab http://blog.portswigger.net/2012/12/sample-burp-suite-extension-custom_17.html
 
+The extension is now available via the [BApp Store](https://portswigger.net/bappstore/)
 
 # Author
 - Marco Tinari
