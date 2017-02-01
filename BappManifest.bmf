@@ -2,7 +2,7 @@ Uuid: 84ff4dceaae14e84990c6f3f7fe999bd
 ExtensionType: 2
 Name: CustomDeserializer
 ScreenVersion: 1.0
-SerialVersion: 0
+SerialVersion: 1
 MinPlatformVersion: 0
 ProOnly: False
 Author: Marco Tinari
