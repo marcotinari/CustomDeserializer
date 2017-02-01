@@ -6,5 +6,5 @@ SerialVersion: 0
 MinPlatformVersion: 0
 ProOnly: False
 Author: Marco Tinari
-ShortDescription: Speed up manual testing of web applications by applying custom deserialization
+ShortDescription: Speeds up manual testing of web applications by performing custom deserialization.
 EntryPoint: CustomDeserializer_1.0.py
